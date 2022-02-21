@@ -29,5 +29,4 @@ function App() {
     </MotionConfig>
   )
 }
-
 ReactDOM.render(<App />, document.getElementById("root"))
