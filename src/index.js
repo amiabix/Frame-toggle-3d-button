@@ -23,8 +23,8 @@ function App() {
           color: isOn ? "#070707" : "#FFFFFF"
         }}
       >
-        <h1 className="open" children="From"/>
-        <h1 className="close" children="hello" />
+        <h1 className="open" children="Slide"/>
+        <h1 className="close" children="20 sec" />
         <motion.h1 ref={headerRef} />
         <Scene isOn={isOn} setOn={setOn} />
       </motion.div>
