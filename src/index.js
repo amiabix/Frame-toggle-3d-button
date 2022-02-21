@@ -9,10 +9,7 @@ import { transition } from "./transition"
 
 function App() {
   const [isOn, setOn] = useState(true)
-  // const [isHovering, setHovering] = useState(false)
   const headerRef = useAnimatedText(isOn ? 10 : 30, transition)
-  // console.log(headerRef)
-  
   return (
     <MotionConfig transition={transition}>
       <motion.div
