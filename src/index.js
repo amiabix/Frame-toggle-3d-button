@@ -6,10 +6,13 @@ import "./styles.css"
 import { Scene } from "./Canvas"
 import { transition } from "./transition"
 
+
 function App() {
   const [isOn, setOn] = useState(true)
-  const headerRef = useAnimatedText(isOn ? 40 : 94, transition)
-
+  // const [isHovering, setHovering] = useState(false)
+  const headerRef = useAnimatedText(isOn ? 10 : 30, transition)
+  // console.log(headerRef)
+  
   return (
     <MotionConfig transition={transition}>
       <motion.div
@@ -20,8 +23,8 @@ function App() {
           color: isOn ? "#070707" : "#FFFFFF"
         }}
       >
-        <h1 className="open" children="<h1>" />
-        <h1 className="close" children="</h1>" />
+        <h1 className="open" children="From"/>
+        <h1 className="close" children="hello" />
         <motion.h1 ref={headerRef} />
         <Scene isOn={isOn} setOn={setOn} />
       </motion.div>
