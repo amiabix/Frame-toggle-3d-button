@@ -7,6 +7,7 @@ import { Scene } from "./Canvas"
 import { transition } from "./transition"
 
 
+
 function App() {
   const [isOn, setOn] = useState(true)
   const headerRef = useAnimatedText(isOn ? 10 : 30, transition)
