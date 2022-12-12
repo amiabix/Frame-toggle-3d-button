@@ -17,8 +17,8 @@ function App() {
         className="container"
         initial={false}
         animate={{
-          backgroundColor: isOn ? "#FFFFFF" : "#070707",
-          color: isOn ? "#070707" : "#FFFFFF"
+          background: isOn ? "linear-gradient(to right, #03001e ,#7303c0 ,#ec38bc ,#fdeff9 )" : "linear-gradient(to right, #F0F2F0, #000C40)",
+          color: isOn ? "#ffffff" : "#000000"
         }}
       >
         <h1 className="open" children="Slide"/>
