@@ -12,10 +12,10 @@ function Switch({ isOn, setOn }) {
 
   const lightVariants = {
     on: {
-      color: "linear-gradient(to right, #888, #1A1A1A)"
+      color: "linear-gradient(to right, #A020F0, #1A1A1A)"
     },
     off: {
-      color: "linear-gradient(to right, #1A1A1A, #888)"
+      color: "linear-gradient(to right, #1A1A1A, #A020F0)"
     }
   }
   
@@ -124,6 +124,12 @@ export function Scene({ isOn, setOn }) {
 }
 
 const colorVariants = {
-  on: { color: "#1A1A1A" },
-  off: { color: "#DADADA" }
+  const lightVariants = {
+    on: {
+      color: "linear-gradient(to right, #A020F0, #1A1A1A)"
+    },
+    off: {
+      color: "linear-gradient(to right, #1A1A1A, #A020F0)"
+    }
+  }
 }
