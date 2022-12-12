@@ -11,10 +11,14 @@ function Switch({ isOn, setOn }) {
   const onClick = useCallback(() => setOn(!isOn), [isOn])
 
   const lightVariants = {
-    on: { color: "#888" },
-    off: { color: "#1A1A1A" }
+    on: {
+      color: "linear-gradient(to right, #888, #1A1A1A)"
+    },
+    off: {
+      color: "linear-gradient(to right, #1A1A1A, #888)"
+    }
   }
-
+  
   return (
     <group scale={[1.25, 1.25, 1.25]} dispose={null}>
       <motion.mesh receiveShadow castShadow geometry={nodes.Cube.geometry}>
